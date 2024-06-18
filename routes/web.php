@@ -15,6 +15,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    Route::get('/permintaan-masuk', function () {
+        return view('pages.permintaan-masuk');
+    })->name('permintaan-masuk');
 });
+
+
+
+Route::get('/request-user', function () {
+    return view('pages.request-user');
+})->name('request-user');
 
 require __DIR__.'/auth.php';

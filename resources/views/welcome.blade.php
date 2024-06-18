@@ -14,10 +14,11 @@
                     @guest
                         <a href="{{ route('login') }}" class="btn-get-started scrollto me-2" style="background-color: #061097;">Login User</a>
                     @endguest
-                    <a href="./request_user" class="btn-get-started scrollto" style="background-color: #eaee16; color: black;">Request User</a>
+                    <a href="{{ route('request-user') }}" class="btn-get-started scrollto" style="background-color: #eaee16; color: black;">Request User</a>
                 </div>
             </div>
         </section>
+        
         <!-- End Hero -->
     @endif
 
